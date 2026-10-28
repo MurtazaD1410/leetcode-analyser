@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Complexity Analyzer (Gemini)",
+  "version": "2.0.0",
+  "description": "Side panel that analyzes your LeetCode solution with Gemini and charts its time and space complexity.",
+  "minimum_chrome_version": "114",
+  "permissions": ["sidePanel", "storage", "scripting"],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://leetcode.cn/*",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "action": { "default_title": "Open Complexity Analyzer" },
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+}
